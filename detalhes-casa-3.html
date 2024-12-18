@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Casa - Imobiliária</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detalhes.css">
+</head>
+<body>
+    <header>
+        <div class="logo-inicio">
+            <img src="/img/logo-juliana-gimenes.png" alt="Logo da Imobiliária">
+        </div>
+
+        <div class="introducao">
+            <h1>Detalhes da Casa</h1>
+        </div>
+    </header>
+
+    <section class="house-details">
+        <div class="image-container">
+            <img src="/img/casa-site-03.webp" alt="Imagem da Casa à Venda">
+        </div>
+
+        <div class="info-container">
+            <h2>Casa Moderna à Venda</h2>
+            <p><strong>Endereço:</strong> Rua das Flores, 123, Bairro Primavera, Cidade Exemplo</p>
+            <p><strong>Preço:</strong> R$ 3.500.000,00</p>
+            <p><strong>Área Total:</strong> 800 m²</p>
+            <p><strong>Área Construída:</strong> 500 m²</p>
+            <p><strong>Quartos:</strong> 5</p>
+            <p><strong>Banheiros:</strong> 4</p>
+            <p><strong>Garagem:</strong> 2 vagas</p>
+            <p><strong>Descrição:</strong> Esta bela casa moderna conta com design contemporâneo, ampla iluminação natural e acabamentos de alto padrão. O quintal espaçoso é ideal para relaxar e realizar eventos ao ar livre. Localizada em uma área tranquila e bem conectada com os principais serviços da região.</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h3>Entre em Contato</h3>
+        <form action="send-contact.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Imobiliária. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

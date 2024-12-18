@@ -1,0 +1,163 @@
+/* Resetando estilos e garantindo consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo básico do corpo */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    background-color: #5f2904;
+    color: white;
+    width: 100%;
+}
+
+.logo-inicio {
+    display: flex;
+    align-items: center;
+}
+
+.logo-inicio img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.introducao {
+    flex: 1;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Seção de detalhes da casa */
+.house-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1 1 50%;
+    padding: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info-container {
+    flex: 1 1 50%;
+    padding: 2rem;
+}
+
+.info-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info-container strong {
+    font-weight: bold;
+}
+
+/* Formulário de contato */
+.contact-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #5f2904;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4a1d02;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .house-details {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .info-container {
+        flex: 1 1 100%;
+    }
+}
